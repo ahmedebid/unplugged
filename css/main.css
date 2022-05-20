@@ -87,6 +87,86 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ---------------------- Base Header - Footer Styles  ---------------------- */
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* Header */
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Footer */
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------- Mobile Styles - Homepage  ---------------------- */
+
+/* Hero Section */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+}
+
+/* Features Section */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; 
+}
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+}
+
+/* Reviews Section */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
