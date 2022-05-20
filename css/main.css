@@ -167,6 +167,26 @@ aside {
   flex-flow: row wrap; 
 }
 
+/* ---------------------- Mobile Styles - About Page  ---------------------- */
+
+/* mission section */
+
+.mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* contact section */
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
