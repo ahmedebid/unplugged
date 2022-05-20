@@ -187,6 +187,15 @@ aside {
   flex-flow: row wrap;
 }
 
+/* ---------------------- Mobile Styles - FAQ Page  ---------------------- */
+
+.faq-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
