@@ -242,7 +242,7 @@ aside .content-wrapper {
 .contact-content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -420,6 +420,32 @@ main.faq-page {
   .reviews article {
     flex-direction: row; 
   }
+
+/* ---------------------- Tablet Styles - About Page  ---------------------- */
+  
+/* Base Styles */
+
+main.about-page {
+  padding: 65px;
+}
+
+/* Mission Section */
+
+.mission-content {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mission-content p {
+  width: 45%;
+}
+
+/* Contact Section */
+
+.contact-content {
+  flex-direction: row;
+  justify-content: space-between;
+}
 }
 
 /* Styles for Desktop */
