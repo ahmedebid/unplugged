@@ -446,6 +446,23 @@ main.about-page {
   flex-direction: row;
   justify-content: space-between;
 }
+
+/* ---------------------- Tablet Styles - FAQ Page  ---------------------- */
+
+/* Base Styles */
+main.faq-page {
+  padding: 65px;
+}
+
+.faq-content {
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.faq-content article {
+  width: 45%;
+}
+
 }
 
 /* Styles for Desktop */
