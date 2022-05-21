@@ -225,6 +225,10 @@ aside {
 
 /* ---------------------- Mobile Styles - FAQ Page  ---------------------- */
 
+main.faq-page {
+  padding: 20px;
+}
+
 .faq-content {
   display: flex;
   justify-content: center;
