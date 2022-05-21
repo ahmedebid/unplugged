@@ -115,17 +115,33 @@ header .content-wrapper {
   width: 100%;
 }
 
+nav {
+  width: 100%;
+}
+
 nav ul {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 30px;
 }
 
 /* Footer */
 
 footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-content {
   width: 55%;
   margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .social-icons {
@@ -156,7 +172,7 @@ main.homepage {
   flex-direction: column;
 }
 
-aside {
+aside .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,6 +201,13 @@ aside {
 /* Reviews Section */
 
 .reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.reviews article {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,9 +349,76 @@ main.faq-page {
 
 /* Styles for Tablet */
 @media only screen and (min-width: 768px) {
-  /* ---------------------- Base Header - Footer Styles  ---------------------- */
+/* ---------------------- Base Header - Footer Styles  ---------------------- */
+
+  /* Header */
+
+  header {
+    padding: 30px 65px;
+  }
+
   header .content-wrapper {
     width: 100%;
+    flex-direction: row;
+  }
+
+  nav {
+    width: 25%;
+  }
+
+  nav ul {
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 60%;
+  }
+
+  footer .footer-content {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+/* ---------------------- Tablet Styles - Homepage  ---------------------- */
+
+  /* Base Styles */
+
+  main.homepage {
+    padding: 65px;
+  }
+
+  /* Hero Section */
+
+  .hero-area h1 {
+    width: 85%;
+  }
+
+  aside .content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  aside .form-description, aside .form {
+    width: 40%;
+  }
+
+  /* Features Section */
+
+  .features-items {
+    flex-flow: row wrap;
+  }
+
+  .features article {
+    width: 40%;
+  }
+
+  /* Reviews Section */
+
+  .reviews article {
+    flex-direction: row; 
   }
 }
 
