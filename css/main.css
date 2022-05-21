@@ -94,7 +94,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 /* Header */
@@ -108,7 +108,7 @@ header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 .header-divider {
@@ -153,14 +153,14 @@ main.homepage {
 .hero-area {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 /* Features Section */
@@ -168,14 +168,14 @@ aside {
 .features {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap; 
+  flex-direction: column; 
 }
 
 .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap; 
+  flex-direction: column; 
 }
 
 .features article {
@@ -188,7 +188,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap; 
+  flex-direction: column; 
 }
 
 .reviews h3 {
@@ -199,20 +199,28 @@ aside {
 
 /* mission section */
 
+.mission {
+  padding: 20px;
+}
+
 .mission-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 /* contact section */
+
+.contact-section {
+  padding: 20px;
+}
 
 .contact-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 /* ---------------------- Mobile Styles - FAQ Page  ---------------------- */
@@ -221,7 +229,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 /* ==========================================================================
@@ -312,8 +320,17 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* Styles for Tablet */
+@media only screen and (min-width: 768px) {
+  /* ---------------------- Base Header - Footer Styles  ---------------------- */
+  header .content-wrapper {
+    width: 100%;
+  }
+}
+
+/* Styles for Desktop */
+@media only screen and (min-width: 1200px) {
+
 }
 
 @media print,
