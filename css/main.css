@@ -349,7 +349,7 @@ main.faq-page {
 
 /* Styles for Tablet */
 @media only screen and (min-width: 768px) {
-/* ---------------------- Base Header - Footer Styles  ---------------------- */
+  /* ---------------------- Base Header - Footer Styles  ---------------------- */
 
   /* Header */
 
@@ -382,7 +382,7 @@ main.faq-page {
     justify-content: space-between;
   }
 
-/* ---------------------- Tablet Styles - Homepage  ---------------------- */
+  /* ---------------------- Tablet Styles - Homepage  ---------------------- */
 
   /* Base Styles */
 
@@ -421,53 +421,54 @@ main.faq-page {
     flex-direction: row; 
   }
 
-/* ---------------------- Tablet Styles - About Page  ---------------------- */
+  /* ---------------------- Tablet Styles - About Page  ---------------------- */
   
-/* Base Styles */
+  /* Base Styles */
 
-main.about-page {
-  padding: 65px;
-}
+  main.about-page {
+    padding: 65px;
+  }
 
-/* Mission Section */
+  /* Mission Section */
 
-.mission-content {
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .mission-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.mission-content p {
-  width: 45%;
-}
+  .mission-content p {
+    width: 45%;
+  }
 
-/* Contact Section */
+  /* Contact Section */
 
-.contact-content {
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .contact-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-/* ---------------------- Tablet Styles - FAQ Page  ---------------------- */
+  /* ---------------------- Tablet Styles - FAQ Page  ---------------------- */
 
-/* Base Styles */
-main.faq-page {
-  padding: 65px;
-}
+  /* Base Styles */
+  main.faq-page {
+    padding: 65px;
+  }
 
-.faq-content {
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
+  .faq-content {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 
-.faq-content article {
-  width: 45%;
-}
+  .faq-content article {
+    width: 45%;
+  }
 
 }
 
 /* Styles for Desktop */
 @media only screen and (min-width: 1200px) {
-/* ---------------------- Tablet Styles - Homepage  ---------------------- */
+
+  /* ---------------------- Desktop Styles - Homepage  ---------------------- */
 
   /* Base Styles */
 
@@ -483,6 +484,20 @@ main.faq-page {
 
   .features article {
     width: 30%;
+  }
+
+  /* ---------------------- Desktop Styles - About Page  ---------------------- */
+
+  /* Base Styles */
+
+  main.about-page {
+    padding: 120px;
+  }
+
+  /* Contact Section */
+
+  .contact-content {
+    padding-right: 500px;
   }
 
 }
