@@ -467,6 +467,23 @@ main.faq-page {
 
 /* Styles for Desktop */
 @media only screen and (min-width: 1200px) {
+/* ---------------------- Tablet Styles - Homepage  ---------------------- */
+
+  /* Base Styles */
+
+  main.homepage {
+    padding: 120px;
+  }
+
+  /* Features Section */
+
+  .features-items {
+    justify-content: space-evenly;
+  }
+
+  .features article {
+    width: 30%;
+  }
 
 }
 
