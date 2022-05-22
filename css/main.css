@@ -500,6 +500,14 @@ main.faq-page {
     padding-right: 500px;
   }
 
+  /* ---------------------- Desktop Styles - FAQ Page  ---------------------- */
+
+  /* Base Styles */
+
+  main.faq-page {
+    padding: 120px;
+  }
+
 }
 
 @media print,
