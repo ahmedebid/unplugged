@@ -102,18 +102,23 @@ body {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25rem;
+  font-weight: 500;
+  margin: 35px 0 310px 0;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875rem;
   line-height: 1.875rem;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125rem;
+  margin: 0;
+  font-weight: 500;
 }
 
 p {
@@ -129,6 +134,14 @@ a {
   color: #e2e3ed;
   text-decoration: none;
   font-size: 1.125rem;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
 }
 
 /* ---------------------- Base Header - Footer Styles  ---------------------- */
@@ -209,7 +222,10 @@ footer .footer-content {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 100%;
   padding: 20px;
+  /* background: bg-color bg-image position/bg-size bg-repeat; */
+  background: #333 url("../img/hero-section.jpg") center/cover no-repeat;
 }
 
 aside .content-wrapper {
@@ -222,7 +238,7 @@ aside .content-wrapper {
 }
 
 aside .form {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 input[type=text] {
@@ -231,6 +247,7 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  margin-top: 14px;
 }
 
 input[type=button] {
@@ -254,6 +271,7 @@ input[type=button] {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  background: #333 url("../img/features-section.jpg") center/cover no-repeat;
 }
 
 .features-items {
@@ -286,7 +304,8 @@ input[type=button] {
 }
 
 .reviews h3 {
-  width: 50%;
+  width: 60%;
+  margin-top: 20px;
 }
 
 /* ---------------------- Mobile Styles - About Page  ---------------------- */
@@ -423,6 +442,16 @@ input[type=button] {
 
 /* Styles for Tablet */
 @media only screen and (min-width: 768px) {
+  /* ---------------------- General Styles ---------------------- */
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 
   /* ---------------------- Base Header - Footer Styles  ---------------------- */
 
@@ -467,17 +496,27 @@ input[type=button] {
   }
 
   .hero-area h1 {
-    width: 85%;
+    width: 70%;
   }
 
   aside .content-wrapper {
     flex-direction: row;
     justify-content: space-between;
-    padding: 65px;
+    align-items: flex-start;
+    padding: 50px 65px;
   }
 
-  aside .form-description, aside .form {
+  aside .form-description {
     width: 40%;
+  }
+
+  aside .form {
+    margin-top: 0;
+    width: 45%;
+  }
+
+  input[type=button] {
+    padding: 10px 0;
   }
 
   /* Features Section */
@@ -497,11 +536,26 @@ input[type=button] {
   /* Reviews Section */
 
   .reviews {
-    padding: 65px;
+    padding: 65px 65px 95px 65px;
   }
 
   .reviews article {
-    flex-direction: row; 
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .reviews article div, .reviews article figure {
+    width: 48.5%;
+  }
+
+  .reviews h2 {
+    width: 80%;
+  }
+
+  .reviews h3 {
+    width: 80%;
+    margin-top: 0;
   }
 
   /* ---------------------- Tablet Styles - About Page  ---------------------- */
@@ -552,16 +606,40 @@ input[type=button] {
 /* Styles for Desktop */
 @media only screen and (min-width: 1200px) {
 
+  /* ---------------------- General Styles ---------------------- */
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
   /* ---------------------- Desktop Styles - Homepage  ---------------------- */
 
   /* Hero Section */
 
+  .hero-area h1 {
+    width: 90%;
+  }
+
   .hero-area {
-    padding: 120px;
+    padding: 0px 120px 120px 120px;
   }
 
   aside .content-wrapper {
-    padding: 120px;
+    padding: 50px 200px;
+  }
+
+  aside .form {
+    width: 40%;
   }
 
   /* Features Section */
@@ -581,7 +659,24 @@ input[type=button] {
   /* Reviews Section */
 
   .reviews {
-    padding: 120px;
+    padding: 100px 120px;
+  }
+
+  .reviews h2 {
+    margin-top: 0;
+    margin-bottom: 85px;
+  }
+
+  .reviews article figure, .reviews article div {
+    width: 48%;
+  }
+
+  .reviews article p {
+    width: 90%;
+  }
+
+  .reviews article h3 {
+    width: 70%;
   }
 
   /* ---------------------- Desktop Styles - About Page  ---------------------- */
