@@ -588,6 +588,12 @@ input[type=button] {
     width: 45%;
   }
 
+  /* map section */
+
+  .map figure {
+    padding-bottom: 45%; /* This determines the height of the map relative to its width */              
+  }
+
   /* Contact Section */
 
   .contact-section {
@@ -698,6 +704,12 @@ input[type=button] {
 
   .mission {
     padding: 120px;
+  }
+
+  /* map section */
+
+  .map figure {
+    padding-bottom: 37%; /* This determines the height of the map relative to its width */              
   }
 
   /* Contact Section */
