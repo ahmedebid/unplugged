@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: #e2e3ed;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -134,6 +134,7 @@ a {
   color: #e2e3ed;
   text-decoration: none;
   font-size: 1.125rem;
+  font-weight: 700;
 }
 
 img {
@@ -159,6 +160,11 @@ footer {
 
 header {
   padding: 15px;
+  overflow: hidden;
+}
+
+header img {
+  margin-bottom: 15px;
 }
 
 header .content-wrapper {
@@ -170,7 +176,9 @@ header .content-wrapper {
 }
 
 .header-divider {
-  width: 100%;
+  width: 180%;
+  height: 1px;
+  background-color: #3a3a3a;
 }
 
 nav {
@@ -181,7 +189,8 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 0 30px;
+  padding: 20px 20px 5px 20px;
+  margin: 0;
 }
 
 /* Footer */
@@ -202,7 +211,6 @@ nav ul {
 .social h4 {
   margin-top: 35px;
 }
-
 
 .social-icons {
   display: flex;
@@ -285,6 +293,7 @@ input[type=button] {
 .fontawesome-icon {
   font-size: 3.75rem;
   text-align: center;
+  margin: 40px 0;
 }
 
 .features-item-description {
@@ -297,6 +306,7 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-direction: column; 
+  padding: 0 5px;
 }
 
 .features article {
@@ -485,6 +495,10 @@ input[type=button] {
     line-height: 2.5rem;
   }
 
+  a {
+    font-size: 1rem;
+  }
+
   /* ---------------------- Base Header - Footer Styles  ---------------------- */
 
   /* Header */
@@ -496,10 +510,20 @@ input[type=button] {
   header .content-wrapper {
     width: 100%;
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header img {
+    width: 45%;
+    margin-bottom: 0;
   }
 
   nav {
-    width: 25%;
+    width: 30%;
   }
 
   nav ul {
@@ -568,6 +592,8 @@ input[type=button] {
 
   .features-items {
     flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 60px;
   }
 
   .features article {
@@ -670,8 +696,18 @@ input[type=button] {
     line-height: 1.5rem;
   }
 
+  a {
+    font-size: 1.125rem;
+  }
+
   /* ---------------------- Base Header - Footer Styles  ---------------------- */
 
+  /* Header */
+
+  header {
+    padding: 30px 120px;
+  }
+  
   /* Footer */
 
   .social {
@@ -690,6 +726,10 @@ input[type=button] {
     padding: 0px 120px 120px 120px;
   }
 
+  nav {
+    width: 20%;
+  }
+
   aside .content-wrapper {
     padding: 50px 200px;
   }
@@ -705,11 +745,19 @@ input[type=button] {
   }
 
   .features-items {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   .features article {
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .features p {
+    width: 80%;
   }
 
   /* Reviews Section */
