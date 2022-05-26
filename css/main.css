@@ -382,7 +382,7 @@ input[type=button] {
 /* ---------------------- Mobile Styles - FAQ Page  ---------------------- */
 
 .faq {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   background-color: #527158;
 }
 
@@ -391,6 +391,10 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.faq-content article {
+  margin-bottom: 40px;
 }
 
 /* ==========================================================================
@@ -537,10 +541,11 @@ input[type=button] {
     width: 70%;
   }
 
-  footer .footer-content {
+  .footer-content {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    margin: 80px 0;
   }
 
   .footer-content h4 {
@@ -654,6 +659,10 @@ input[type=button] {
     padding: 65px;
   }
 
+  .contact-section h2 {
+    margin-bottom: 50px;
+  }
+
   .contact-content {
     flex-direction: row;
     justify-content: space-between;
@@ -665,13 +674,19 @@ input[type=button] {
     padding: 65px;
   }
 
+  .faq h4 {
+    font-size: 0.875rem;
+  }
+
   .faq-content {
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .faq-content article {
     width: 45%;
+    margin-bottom: 30px;
   }
 
 }
@@ -803,14 +818,27 @@ input[type=button] {
     padding: 120px;
   }
 
+  .contact-section h2 {
+    font-size: 3rem;
+    margin: 0 0 30px 0;
+  }
+
+  .contact-section p {
+    margin-bottom: 0;
+  }
+
   .contact-content {
-    padding-right: 500px;
+    padding-right: 100px;
   }
 
   /* ---------------------- Desktop Styles - FAQ Page  ---------------------- */
 
   .faq {
-    padding: 120px;
+    padding: 80px 120px;
+  }
+
+  .faq h4 {
+    font-size: 1.125rem;
   }
 
 }
