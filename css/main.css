@@ -186,32 +186,40 @@ nav ul {
 
 /* Footer */
 
-footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-content {
-  width: 55%;
+.footer-content {
   margin: 50px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   text-align: center;
 }
 
+.social {
+  width: 100%;
+}
+
+.social h4 {
+  margin-top: 35px;
+}
+
+
 .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .social-icons p {
+  background: #527158;
+  border-radius: 50%; /* To create a circle */
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  
 }
 
 /* ---------------------- Mobile Styles - Homepage  ---------------------- */
@@ -467,7 +475,8 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   /* ---------------------- General Styles ---------------------- */
 
-  h3 {
+  h3,
+  h4 {
     font-size: 1.5rem;
   }
 
@@ -501,13 +510,22 @@ input[type=button] {
   /* Footer */
 
   footer .content-wrapper {
-    width: 60%;
+    width: 70%;
   }
 
   footer .footer-content {
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .footer-content h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .social {
+    width: 40%;
   }
 
   /* ---------------------- Tablet Styles - Homepage  ---------------------- */
@@ -642,13 +660,22 @@ input[type=button] {
     line-height: 4.25rem;
   }
 
-  h3 {
+  h3,
+  h4 {
     font-size: 1.875rem;
   }
 
   p {
     font-size: 1.125rem;
     line-height: 1.5rem;
+  }
+
+  /* ---------------------- Base Header - Footer Styles  ---------------------- */
+
+  /* Footer */
+
+  .social {
+    width: 20%;
   }
 
   /* ---------------------- Desktop Styles - Homepage  ---------------------- */
