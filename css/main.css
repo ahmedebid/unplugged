@@ -109,7 +109,7 @@ h1 {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875rem;
-  line-height: 1.875rem;
+  line-height: 2.5rem;
   font-weight: 500;
 }
 
@@ -247,7 +247,7 @@ nav ul {
 aside .content-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   background-color: #527158;
   padding: 20px;
@@ -341,8 +341,13 @@ input[type=button] {
 /* mission section */
 
 .mission {
-  padding: 20px;
+  padding: 20px 20px 45px 20px;
   background-color: #527158;
+}
+
+.mission h2,
+.mission p {
+  margin-bottom: 0;
 }
 
 .mission-content {
@@ -384,6 +389,10 @@ input[type=button] {
 .faq {
   padding: 20px 20px 0 20px;
   background-color: #527158;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
 }
 
 .faq-content {
@@ -638,6 +647,14 @@ input[type=button] {
     padding: 65px;
   }
 
+  .mission h2 {
+    margin-bottom: 20px;
+  }
+
+  .mission p {
+    margin-bottom: 30px;
+  }
+
   .mission-content {
     flex-direction: row;
     justify-content: space-between;
@@ -659,8 +676,13 @@ input[type=button] {
     padding: 65px;
   }
 
+  .contact-section .content-wrapper {
+    padding-right: 20px;
+  }
+
   .contact-section h2 {
     margin-bottom: 50px;
+    padding-right: 70px;
   }
 
   .contact-content {
@@ -804,6 +826,14 @@ input[type=button] {
 
   .mission {
     padding: 120px;
+  }
+
+  .mission h2 {
+    margin-top: 0;
+  }
+
+  .mission p {
+    margin-bottom: 0;
   }
 
   /* map section */
